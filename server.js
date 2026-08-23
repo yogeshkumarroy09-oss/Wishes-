@@ -78,14 +78,14 @@ app.post("/api/wish", async (req, res) => {
       }
     );
 
-    if (!response.ok) {
-      const detail = await response.text().catch(() => "");
-      console.error("EmailJS error:", detail);
-
-      return res.status(502).json({
-        ok: false,
-        error: "Email could not be sent"
-      });
+    if(!r.ok) {
+  const errorText = await r.text();
+  console.error("EMAILJS ERROR:", r.status, errorText);
+  return res.status(502).json({
+    ok:false,
+    error:"EmailJS: " + errorText
+  });
+    }
     }
 
     return res.json({ ok: true });
