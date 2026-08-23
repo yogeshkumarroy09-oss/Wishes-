@@ -1,1 +1,39 @@
-Upload birthday website
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday Yogesh 🎂</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="confetti"></div>
+<main>
+<section class="hero">
+  <div class="badge">🎂 YOGESH'S BIRTHDAY 🎉</div>
+  <h1>Happy Birthday, Yogesh! ❤️</h1>
+  <p class="intro">Wish Yogesh and receive a special message from him.</p>
+</section>
+
+<section class="card">
+  <h2>💌 Send your wish to Yogesh</h2>
+  <form id="wishForm">
+    <input id="name" maxlength="60" placeholder="Your name" required>
+    <textarea id="wish" maxlength="500" placeholder="Write your birthday wish for Yogesh..." required></textarea>
+    <button type="submit">🎁 Wish Yogesh</button>
+  </form>
+</section>
+
+<section class="reply card" id="reply" hidden>
+  <div class="heart">❤️</div>
+  <h2 id="replyTitle"></h2>
+  <p id="replyText"></p>
+  <div class="special">— Yogesh 💖</div>
+</section>
+
+<p id="status"></p>
+<footer>Made with ❤️ for Yogesh's birthday</footer>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>
