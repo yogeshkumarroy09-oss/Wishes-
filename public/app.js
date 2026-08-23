@@ -28,7 +28,7 @@ form.addEventListener("submit",async e=>{
 
   // This is the personalized message the visitor sees after wishing Yogesh.
   replyTitle.textContent=`Yogesh says: "I love you much much more, ${name} ❤️"`;
-  replyText.textContent=`Thank you ${name} for wishing Yogesh! Your lovely birthday wish has reached him. 🎂💖`;
+  replyText.textContent=`Thank you ${name}  🎂💖`;
   reply.hidden=false;
   status.textContent="Wish sent successfully! 🎉";
   status.className="success";
