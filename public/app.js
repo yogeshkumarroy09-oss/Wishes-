@@ -27,16 +27,16 @@ form.addEventListener("submit",async e=>{
   if(!r.ok) throw new Error(data.error||"Failed");
 
   // This is the personalized message the visitor sees after wishing Yogesh.
-  replyTitle.textContent=`Yogesh says: "I love you much much more, ${name} ❤️"`;
-  replyText.textContent=`Thank you ${name}  🎂💖`;
+  replyTitle.textContent=`Yogesh says: "kya madarchodo hai re , ${name} ❤️"`;
+  replyText.textContent=`laura pakad  ${name}  🎂💖`;
   reply.hidden=false;
-  status.textContent="Wish sent successfully! 🎉";
-  status.className="success";
+  status.textContent=" sent successfully! 🎉";
+  status.className="sent";
   form.reset();
   celebrate();
   reply.scrollIntoView({behavior:"smooth",block:"center"});
  }catch(err){
-  status.textContent="Sorry, your wish could not be sent. Please try again.";
+  status.textContent="Sorry, your msg not sent .";
   status.className="error";
  }
 });
